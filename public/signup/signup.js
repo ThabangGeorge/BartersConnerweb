@@ -44,6 +44,38 @@ function SignUp(){
              var errorCode = error.code;
              var errorMessage = error.message;
              console.log(errorMessage);//TODO
+             alert(errorMessage);
+         });
+    }
+}
+
+// signin
+function SignIn(){
+    // Get values from UI
+    var email = $("#emailSignin").val(); 
+    var password = $("#passwordSignin").val(); 
+    // Validation
+    if (!validateEmail(email)) {
+        alert('Please enter a valid email address.');//TODO
+        return;
+    }
+    else if(password.length < 4)
+    {
+        alert('Please enter a password with a minimum of 5 characters');//TODO
+        return;
+    }
+    else
+    {
+        console.log(email + password);
+        // Sign up
+        firebase.auth().signInWithEmailAndPassword(email, password).then(function(user) {
+            // Success
+            alert("Successfully signed in")//TODO
+         }).catch(function(error) {
+             var errorCode = error.code;
+             var errorMessage = error.message;
+             console.log(errorMessage);//TODO
+             alert(errorMessage);
          });
     }
 }
