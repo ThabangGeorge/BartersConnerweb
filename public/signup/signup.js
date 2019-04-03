@@ -80,6 +80,63 @@ function SignIn(){
     }
 }
 
+//Google sign in
+function GoogleSignIn()
+{
+    var provider = new firebase.auth.GoogleAuthProvider();
+    firebase.auth().signInWithPopup(provider).then(function(result) {
+        // This gives you a Google Access Token. You can use it to access the Google API.
+        var token = result.credential.accessToken;
+        // The signed-in user info.
+        var user = result.user;
+        alert("Signed in with google");
+      }).catch(function(error) {
+        var errorCode = error.code;
+        var errorMessage = error.message; //TODO
+        alert(errorMessage);
+      });
+}
+
+//Facebook sign in
+function FacebookSignIn()
+{
+    var provider = new firebase.auth.FacebookAuthProvider();
+    firebase.auth().signInWithPopup(provider).then(function(result) {
+        // This gives you a Facebook Access Token. You can use it to access the Facebook API.
+        var token = result.credential.accessToken;
+        // The signed-in user info.
+        var user = result.user;
+        alert("Signed in with facebook");
+      }).catch(function(error) { //TODO
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        var email = error.email;
+        var credential = error.credential;
+        alert(errorMessage);
+      });
+}
+
+//Twitter sign in
+function TwitterSignIn()
+{
+    var provider = new firebase.auth.TwitterAuthProvider();
+    firebase.auth().signInWithPopup(provider).then(function(result) {
+        // This gives you a the Twitter OAuth 1.0 Access Token and Secret.
+        // You can use these server side with your app's credentials to access the Twitter API.
+        var token = result.credential.accessToken;
+        var secret = result.credential.secret;
+        var user = result.user;
+        alert("Signed in with twitter");
+      }).catch(function(error) { //todo
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        var email = error.email;
+        var credential = error.credential;
+        alert(errorMessage);
+      });
+}
+
+
 function validateEmail(email) {
     var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(String(email).toLowerCase());
