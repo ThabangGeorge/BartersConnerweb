@@ -9,11 +9,20 @@
     <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
     <!-- JS -->
     <script src="signup.js"></script>
-    <title>Barters Conner</title>
+
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <link href="Style.CSS/prof.css" rel="stylesheet"/>
+    
+    
+     <link rel = "icon" type = "image/png" href ="../img/Indexpage/dqq.png"/>
+ 
+     <title>Sign in | BartersConner</title>
+
 
   </head>
-  <body>
-    
+  <body style="background-image:url(../img/loginpage/oh.jpg)">
+    <!--
     <h1>sign up</h1>
     email: <input type="text" id="emailSignup"><br>
     password: <input type="text" id="passwordSignup"><br>
@@ -32,6 +41,136 @@
 
     <h1>twitter sign in</h1>
     <button onclick="TwitterSignIn()">twitter Sign in</button>
+
+  -->
+
+
+    <nav class="navbar navbar-light" style="background-color:#212121;">
+      <a class="navbar-brand" href="#">
+        <img src="../img/Indexpage/logo.jpg" width="140" height="45" class="d-inline-block align-top" alt="">
+      
+      </a>
+
+      
+    </nav>
+
+    
+<!--loader     
+  
+  <div class="loader">
+      <img src="source.gif" alt="Loading..." />
+  </div>
+ -->
+
+
+
+
+
+  <div class="card" style=" width: 65% ;height: 33rem; margin-left: 13%; margin-top: 3%" >
+      
+     
+   
+      <article class="card-body" style="margin :5%;">
+          <!--<a href="" class="float-right btn btn-outline-primary">Sign up</a>-->
+          <h4 style="text-align: center" class="card-title mb-4 mt-1">Signup</h4>
+ 
+          <button onclick="FacebookSignIn()"  style="width:100%; margin: 1%; background-color: #3b5998" type="button" class="btn btn-primary"><img width="25" height="25" src="../img/Loginpage/Popular_Social_Media-01-512.png">  Login via facebook</button>
+          <button onclick="TwitterSignIn()" style="width:100%;margin: 1%"type="button" class="btn btn-info"><img width="25" height="25" src="../img/Loginpage/Twitter-Logo-PNG-1.png">  Login via Twitter</button>
+          <button onclick="GoogleSignIn()" style="width:100%;margin: 1%" type="button" class="btn btn-danger"><img width="25" height="25" src="../img/Loginpage/Google_logo.png"> Login via gamil</button>
+         <hr>
+        
+          <form id="form" >
+          <div class="form-group">
+              <input style="border-top:white;border-left:white; border-right:white; border-radius: 0%; "  id="emailSignip" class="form-control" placeholder="Email or login" type="email">
+          </div> <!-- form-group// -->
+          <div class="form-group">
+              <input style="border-top:white;border-left:white; border-right:white; border-radius: 0%; " id="passwordSignin" class="form-control" placeholder="******" type="password">
+              
+          </div> 
+          
+          <!-- form-group// -->                                      
+          <button  onclick="SignIn()"type="button" id="login"  class="btn btn-primary btn-block"> Login  </button>
+                 
+          <div class="row">
+              
+              <div style="margin-left: 10%;" class="col-md-6 text-right">
+                  
+                  <a  class="small" href="#">Forgot password?</a>
+              </div>                                            
+          </div> <!-- .row// -->                                                                  
+      </form>
+
+
+      </article>
+      </div> <!-- card.// -->
+
+<!-- Signup which will be hidden on active-->      
+  
+      <div class="card" style=" width: 65% ;height: 32rem; margin-left: 13%; margin-top: 3%" >
+      
+     
+   
+      <article class="card-body" style="margin :5%;">
+          <!--<a href="" class="float-right btn btn-outline-primary">Sign up</a>-->
+          <h4 style="text-align: center" class="card-title mb-4 mt-1">SignUp</h4>
+ 
+          <button onclick="FacebookSignIn()"  style="width:100%; margin: 1%; background-color: #3b5998" type="button" class="btn btn-primary"><img width="25" height="25" src="../img/Loginpage/Popular_Social_Media-01-512.png">  Signup via facebook</button>
+          <button onclick="TwitterSignIn()" style="width:100%;margin: 1%"type="button" class="btn btn-info"><img width="25" height="25" src="../img/Loginpage/Twitter-Logo-PNG-1.png">  Signup via Twitter</button>
+          <button onclick="GoogleSignIn()" style="width:100%;margin: 1%" type="button" class="btn btn-danger"><img width="25" height="25" src="../img/Loginpage/Google_logo.png"> Signup via gamil</button>
+         <hr>
+        
+          <form id="form" >
+          <div class="form-group">
+              <input style="border-top:white;border-left:white; border-right:white; border-radius: 0%; "  id="emailSignup" class="form-control" placeholder="Email or login" type="email">
+          </div> <!-- form-group// -->
+          <div class="form-group">
+              <input style="border-top:white;border-left:white; border-right:white; border-radius: 0%; " id="passwordSignup" class="form-control" placeholder="******" type="password">
+              
+          </div> 
+          
+          <!-- form-group// -->                                      
+          <button type="submit"  onclick="SignUp()" id="button2"  class="btn btn-primary btn-block"> Register  </button>
+                 
+          <div class="row">
+              
+              <div style="margin-left: 10%;" class="col-md-6 text-right">
+                  
+                  <a  class="small" href="#">Forgot password?</a>
+                  <br>
+                  <a  class="small" href="#"  onclick="window.location.href='../Addtextbook/Addtextbook.html'" >Next page</a>
+
+              </div>                                            
+          </div> <!-- .row// -->                                                                  
+      </form>
+
+
+      </article>
+      </div> <!-- card.// -->
+  
+
+
+
+  
+        
+    
+          </aside> <!-- col.// -->
+          <aside class="col-sm-4">
+
+
+
+
+
+
+
+
+
+ 
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
   </body>
 </html>

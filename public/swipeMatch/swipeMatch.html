@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+
+    <link rel="stylesheet" href="bootstrap/css/css/bootstrap.css"  >
+    <link rel="stylesheet" href="bootstrap/css/css/bootstrap.min.css"  >
+    <link href="Style.CSS/Style.css" rel="stylesheet"/>
+    <link href="Style.CSS/prof.css" rel="stylesheet"/>
+    
+    <!-- Icon logo -->
+    <link rel = "icon" type = "image/png" href ="../img/Indexpage/dqq.png"/>
+    
+    
+    <title>Menu | BartersConner</title>
+
+    
+  </head>
+  
+  
+  
+  <body>
+    <!--
+    <script type="text/javascript" src="jsfiles/imp.js"></script>
+    <div class="loader">
+      <img src="source.gif" alt="Loading..." />
+  </div>-->
+
+    <nav  class="navbar navbar-light" style="background-color:#212121;">
+                <a class="navbar-brand" href="#">
+                  <img src="../img/Indexpage/logo.jpg" width="140" height="45" class="d-inline-block align-top" alt="">
+                
+                </a>                
+    </nav>
+
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color :#212121;">
+        <a href="../profile/profile.html"><img style="border: solid; border-color: white" class="rounded-circle" class="profile-pic" width="35" height="35" src="https://bootdey.com/img/Content/avatar/avatar1.png"></a>
+        <a style="color : black;" href="../profile/profile.html"><p   >Deyson Bejarano </p></a>
+           
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <!--Manue nev bar-->  
+            <div style="font-size: 70%" class="collapse navbar-collapse" id="navbarNav">
+                
+                <ul  class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#"> <button style="  margin: 0%; border-color : white;" type="button" class="btn btn-outline-secondary" onclick="window.location.href='../Trades/Trades.html'"><img  width="20" height="20"  src= " ../img/png/avatar.png"> Trades </button>
+                      <span class="sr-only">(current)</span></a>
+                  </li>
+                
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><button style=" margin: 0%; border-color : white;" type="button" class="btn btn-outline-secondary"onclick="window.location.href='../swipematch/swipematch.html'"><img  width="20" height="20"  src= " ../img/png/png/match.png" > Match </button>
+                    </a>
+                  </li>
+                
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"> <button style=" margin: 0%; border-color : white;" type="button" class="btn btn-outline-secondary"onclick="window.location.href='../NewUsers/NewUsers.html'"><img  width="20" height="20"  src= " ../img/png/chat-1.png" > New Barterees  </button>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#"> <button style=" margin: 0%; border-color : white;" type="button" class="btn btn-outline-secondary"onclick="window.location.href='../Index.html'"><img  width="20" height="20"  src= " ../img/png/logout.png"> Logout  </button></a>
+                  </li>
+        
+                </ul>
+            </div>
+    </nav>
+             
+    <div style="  color : grey ;" class="container" > 
+       
+        <div  class="row" >
+       
+            <table style="  width: 100% ;  " >
+                <tr >
+                    <td>               
+                        <div class="card" style="  text-align: center; width: 100%; height: 48rem; margin: 1%;">
+                            <div class="card-body" style="  text-align :center; width: 70%;" >
+                                <div class="card" style=" background-color:#f0f0f0; width: 145%; text-align: center; margin-top: 1% ; ">         
+             
+                             <!-- Swipe Card for profile  match or not-->
+                            <form id="Swipe" >                   
+                                <div class="card-body" >
+                            
+                                    <!--profile picture for possible match-->
+                                    <span class="img-wrapper pull-left m-r-15"><img id="Profilepic" src="../img/match/oo.jpg"  width="95" height="95" style=" border: solid; border-color: white; margin-top: 2%" class="rounded-circle"></span>
+                                     <br>            
+
+                                    <img  width="20" height="20" src="../img/png/padlock.png">
+                                    
+                                    <!-- name of potential match-->
+                                    <h5 id="NameOfMatch" >Deyson Bejarano</h4>
+                                        
+                                        
+                                    <!-- Account type-->
+                                    <h7  class="" style="color: gray; font-size: 11px;margin-bottom: 2%;" >Account type: Free Standard</h7>
+                                    
+                                    <br>
+                                    
+                                    <!-- should show user match  for free accounts will state that the future is avlible for primium users-->
+                                    <button  type="button"  class="btn btn-outline-dark"> User Matchs  </button>
+                                    <button type="button"  class="btn btn-outline-info">User Info  </button>   
+
+                                    <br>
+                                    <hr>
+                                                      
+                                 
+                                 
+                                    <!-- Textbooks information-->
+                                     <div style=" width:100%; height:100% ; " id="textbookInfo" class="carousel slide" data-ride="carousel">
+                                      
+                                        <table style="width :100%;  padding: 0%">
+                                            
+                                            <!-- row 1 of table-->
+                                            <tr>    
+                                                <!-- colum one show the textbook that the user has-->
+                                                <td> 
+                                                    <h6 style="   color:rgb(37, 175, 255);" >Textbooks on hand</h6>
+                                                    <hr style="width:100%; background-color: white">
+                                                </td>
+
+                                                <!-- colum two show the textbook that the user is looking for-->
+                                                <td> 
+                                                    <h6 style="color:rgb(37, 175, 255)" >Textbooks on required</h6>
+                                                    <hr style="width:100%; background-color:white">
+                                                </td>
+                                        
+                                            </tr>
+  
+
+                                            <!-- row 2 of table-->
+                                            <tr>
+                                                <!-- picture of textbook that the user has-->
+                                                <td>
+                                                    <img width="70" height="100" src="../img/match/bba.jpg" class="" alt="...">
+                                                </td>
+                                            
+                                                
+                                                <!-- picture of textbook that the user is looking for-->
+                                                <td> 
+                                        
+                                                    <img width="70" height="100" src="../img/match/ec.jpg" class="" alt="...">
+                                                </td>
+                                            </tr>
+
+                                            
+
+                                            <!-- row 3 of table-->
+                                            <tr>
+                                                
+                                            <!-- Information of textbook that the user has-->
+                                                <td>
+                                                    <hr> 
+                                                    <p style=" font-size: 60% ;   color:grey; text-align: left; margin-right: 5% " >  Title: South African employment relations theory and practice Author: Nel, P. S. Year Published: 2016 Edition: 8th Publisher: Van Schaik: Pretoria</p>
+                                                    <hr>
+                                                </td>
+
+                                                
+                                            <!-- Information of textbook that the user is looking for-->
+                                                <td>
+                                                    <hr> 
+                                                    <p style=" font-size: 60% ;  color:grey; text-align: left; margin-left: 8%  " >  Title: South African employment relations theory and practice Author: Nel, P. S. Year Published: 2016 Edition: 8th Publisher: Van Schaik: Pretoria</p>
+                                                    <hr>
+                                                </td>
+                                            </tr>
+
+
+                                        </table>
+                                   </div>
+                                </div>
+                            </form>
+
+
+                            
+                        </div>
+                        
+
+
+
+                        <!--Circle buttons-->  
+                        <Table  style=" width: 120%; margin: 4%; margin-left: 10%;  ">
+                                    <tr>
+                                        
+                                        <td>
+                                         <div style=" margin :1%">
+                                            <button style=" padding: 5%;  border-radius:100%;" type="button" class="btn btn-outline-primary"><img style="padding:15%" width="50" height="50" src="../img/png/next.png"> </button>
+                                          </div>
+                                        </td>
+                                        
+                                        <td>    
+                                            <div style="  margin :1%">
+                                               <button style=" padding: 5%; border-radius:100%;  " onclick="window.location.href='../Match/match.html'" type="button" class="btn btn-outline-success" > <img style="padding: 15%;"width="50" height="50" src="../img/png/match.png"> </button>
+                                              </div>
+                                        </td>
+                                        
+                                        <td>
+                                              <div style=" margin :1%">
+                                                 <button style=" padding: 5%;  border-radius:100%;" type="button" class="btn btn-outline-danger"><img width="50" height="50" src="../img/png/cancel.png"></button>
+                                                
+                                              </div>
+                                        </td>
+                                                 
+                                    </tr>
+                            
+
+                                    <tr>
+                                          <td>
+                                             <div style=" margin :1%">
+                                    
+                                               <p style="font-size:60%; color: rgb(0, 105, 190); " >Previous</p>
+                                              
+                                              </div>
+                                            </td>
+                                            <td>
+                                                <div style="  margin :1%">
+                                                    <p style="font-size:60%; color: green;">Profile Match</p>
+                                                </div>
+                                            </td>
+                                            
+                                            <td>
+                                                <div style=" margin :1%">
+                                                      <p style="font-size:60%; color: red; " >Not a Match</p>                                                    
+                                                </div>
+                                            </td>
+                                    
+                                    </tr>
+                                </Table>
+                
+                                    
+                            </tr>
+                                
+                   </table>
+                            
+                                 
+                                  
+                                
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
+  
+  </body>
+</html>
+  
+    
+
+
+
+
+
+
+
+
