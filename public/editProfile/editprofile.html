@@ -15,33 +15,26 @@
         <link rel="stylesheet" href="../bootstrap/css/css/bootstrap.css"  >
         <link rel="stylesheet" href="../bootstrap/css/css/bootstrap.min.css"  >
              <!-- Icon logo -->
-    <link rel = "icon" type = "image/png" href ="dqq.png"/>
+    <link rel = "icon" type = "image/png" href ="../img/Indexpage/dqq.png"/>
     <link href="../Style.CSS/prof.css" rel="stylesheet"/>
      <title>Profile | BartersConner</title>
                <!-- Icon logo -->
     <link rel = "icon" type = "image/png" href ="../img/Indexpage/dqq.png"/>
    
-
-  </head>
+   </head>
   
  
   
   
-  <body>
-       
+  <body >
+      <!--Nav Bar 1--> 
       <nav  class="navbar navbar-light" style="background-color:#212121;">
                 <a class="navbar-brand" href="#">
                   <img src="../img/Indexpage/logo.jpg" width="140" height="45" class="d-inline-block align-top" alt="">
-                
                 </a>
-
-                
-              </nav>
-
-
-
-
-              <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color :#212121;">
+      </nav>
+      <!--Nav Bar 2-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color :#212121;">
                 <a href="../Profile/Profile.html"><img style="border: solid; border-color: white" class="rounded-circle" class="profile-pic" width="35" height="35" src="https://bootdey.com/img/Content/avatar/avatar1.png"></a>
                 <a style="color : black;" href="../Profile/Profile.html"><p   >Deyson Bejarano </p></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,40 +63,51 @@
                               </li>
                         </ul>
                       </div>
-                    </nav>           
+    </nav>           
             
 
 
 
 
-                    <div style="margin-top:2%; margin-bottom:2%;" class="container main-secction">
-                            <div class="row">
-                                <div class="col-md-12 col-sm-12 col-xs-12 image-section">
-                                    <img src="https://png.pngtree.com/thumb_back/fw800/back_pic/00/08/57/41562ad4a92b16a.jpg">
+    <div style=" margin-top:2%; margin-bottom:2%;" class="container main-secction">                        
+    
+        
+        <div class="row">
+            <!--Row 1 Cover page-->
+            <div class="col-md-12 col-sm-12 col-xs-12 image-section" >
+                <div style=" float:right; margin: 1%; position:relative;">
+
+                    <a class='btn btn-primary' href='javascript:;'>
+                            Cover Picture 
+                    <input onchange="CoverreadURL(this);"  type="file"  style='position:absolute;z-index:2;top:0;left:0;filter: alpha(opacity=0);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";opacity:0;background-color:transparent;color:transparent;' name="file_source" size="40"  onchange='$("#upload-file-info").html($(this).val());'>
+                    </a>
+                    &nbsp;
+                    <span class='label label-info' id="upload-file-info"></span>
+                </div>
+                    <img id="CoverPic" src="">                     
+            </div>
+            
+            <!--User Infomation-->
+            
+            <div class="row user-left-part" style="width:100%">
+                <div class="col-md-3 col-sm-3 col-xs-12 user-profil-part pull-left">
+                    <div class="row ">
+                        <div class="col-md-12 col-md-12-sm-12 col-xs-12 user-image text-center">
+                            <div class="container">
+                                <div class="picture-container">
+                                    <div class="picture">
+                                        <img src="" class="picture-src" id="wizardPicturePreview" title="">
+                                        <input onchange="readURL(this);" type="file" id="wizard-picture" class="">
+                                    </div>
+                                        <h6 class="">Choose Picture</h6>
+                                
+
                                 </div>
-                                <div class="row user-left-part">
-                                    <div class="col-md-3 col-sm-3 col-xs-12 user-profil-part pull-left">
-                                        <div class="row ">
-                                            <div class="col-md-12 col-md-12-sm-12 col-xs-12 user-image text-center">
-                                                <img src="https://www.jamf.com/jamf-nation/img/default-avatars/generic-user-purple.png" class="rounded-circle">
-                                            </div>
-                                            
-                                            <div class="col-md-12 col-sm-12 col-xs-12 user-detail-section1 text-center">
-                                             
-                                            
-                                              
-                                              <div style="margin-top:25%; position:relative;">
-
-                                                    <a class='btn btn-primary' href='javascript:;'>
-                                                        Change Profile Picture
-                                                    <input  type="file"  style='position:absolute;z-index:2;top:0;left:0;filter: alpha(opacity=0);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";opacity:0;background-color:transparent;color:transparent;' name="file_source" size="40"  onchange='$("#upload-file-info").html($(this).val());'>
-                                                    </a>
-                                                    &nbsp;
-                                                    <span class='label label-info' id="upload-file-info"></span>
-                                            </div>
-
-                                            </div>
-                                            <div class="row user-detail-row">
+                            </div>
+                        
+                        </div>
+                        
+                                            <div class="row user-detail-row" style="margin-top:35%">
                                                 <div class="col-md-12 col-sm-12 user-detail-section2 pull-left">
                                                     <div class="border"></div>
                                                     <p>TEXTBOOKS TRADES</p>
@@ -111,26 +115,31 @@
                                                 </div>                           
                                             </div>
                                            
-                                        </div>
-                                    </div>
-                                    <div class="col-md-9 col-sm-9 col-xs-12 pull-right profile-right-section">
-                                        <div class="row profile-right-section-row">
-                                            <div class="col-md-12 profile-header">
-                                                <div class="row">
-                                                    <div class="col-md-8 col-sm-6 col-xs-6 profile-header-section1 pull-left">
-                                                        <h1>Deyson Bejarano</h1>
-                                                        <h6>Account type : Standard free</h6>
-                                                    </div>
+                    </div>
+                </div>
+                <div class="col-md-9 col-sm-9 col-xs-12 pull-right profile-right-section">
+                    <div class="row profile-right-section-row">
+                        <div class="col-md-12 profile-header">
+                            <div class="row">
+                                <div class="col-md-8 col-sm-6 col-xs-6 profile-header-section1 pull-left">
+                                    <h1>Deyson Bejarano</h1>
+                                    <h6>Account type : Standard free</h6>
+                                </div>
 
-                                                    <div style=" margin: 3%; position:relative;">
 
-                                                            <a class='btn btn-primary' href='javascript:;'>
-                                                                Change Cover Page
-                                                            <input  type="file"  style='position:absolute;z-index:2;top:0;left:0;filter: alpha(opacity=0);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";opacity:0;background-color:transparent;color:transparent;' name="file_source" size="40"  onchange='$("#upload-file-info").html($(this).val());'>
-                                                            </a>
-                                                            &nbsp;
-                                                            <span class='label label-info' id="upload-file-info"></span>
-                                                    </div>
+
+                                                    <button style="margin: 3%" type="button" class="btn btn-outline-info">Save Information</button>
+
+
+
+
+
+
+
+
+
+
+
                                                 </div>
                                             </div>
                                             <div class="col-md-12">
@@ -156,7 +165,7 @@
                                                                                         <p>
                                                                                             <div class="form-group">
     
-                                                                                                <input style="border-top:white;border-left:white; border-right:white; border-radius: 0%; " id="Unsername" class="form-control" placeholder="User Name" type="text">
+                                                                                                <input style=" border-top:white;border-left:white; border-right:white; border-radius: 0%; " id="Unsername" class="form-control" placeholder="User Name" type="text">
                                                                                             </div>            
                                                                                
                                                                                         </p>
@@ -164,7 +173,7 @@
                                                                                 </div>
                                                                                 <div class="row">
                                                                                     <div class="col-md-2">
-                                                                                        <label>Location:</label>
+                                                                                        <label>Campus Location:</label>
                                                                                     </div>
                                                                                     <div class="col-md-6">
                                                                                         <p>
@@ -194,7 +203,7 @@
                                                                                     <div class="col-md-2">
                                                                                         <label>Contact Details:</label>
                                                                                     </div>
-                                                                                    <div class="col-md-6">
+                                                                                    <div class="col-md-6" style="margin-bottom:5%;">
                                                                                         <p>
                                                                                                 <div class="form-group">
     
@@ -209,20 +218,21 @@
 
                                                                                     </div>
                                                                                 </div>
-                                                                                <hr>
-                                                                                <h6> User Textbooks Information</h6>
+                                                                                
+                                                                                <h6 style="margin-top:5%"> User Textbooks Information</h6>
                                                                                 
                                                                                 
-                                                                                <button style="width: 40% ;margin: 3%" onclick="" type="button" class="btn btn-outline-primary">Add Textbook Branch</button>                       
-           
+                                                                               
                                                                                 <div class="row">
                                                                                     
-                                                                                    <div class="col-md-6" style=" margin: 3%; border:solid; border-radius: 6px; border-color:rgb(236, 236, 236);" >
+                                                                                    <div class="col-md-6" style="  margin: 3%; " >
                                                                                             <table style="text-align: center; width :90%;">
                                                                                                     
                                                                                                
                                                                                                     <!-- row 1 of table-->
                                                                                                     <tr >
+                                                                                                        <button data-toggle="modal" data-target="#exampleModalLong" type="button" class="btn btn-outline-primary">Add textbook detail</button>
+                                                                                                       
                                                                                                         <h6 style="margin: 4%">Branch 1</h6>
                                                                                                         <!-- colum one show the textbook that the user has-->
                                                                                                         <td>
@@ -242,29 +252,61 @@
                                                                         
                                                                         
                                                                                                     <!-- row 2 of table-->
-                                                                                                    <tr>
+                                                                                                    <tr >
                                                                                                         <!-- picture of textbook that the user has-->
                                                                                                         <td>
-                                                                                                            <img width="70" height="100" src="../img/match/bba.jpg" class="" alt="...">
+                                                                                                            <img width="70" height="100" id="TextbookRequired" src="../img/match/picture.jpg" class="" alt="...">
+                                                                                                              
+                                                                                                            
+
+                                                                                                            <div style="  margin: 6%; position:relative;">
+                                                                                                
+                                                                                                                <a class='btn btn-primary' href='javascript:;'>
+                                                                                                                    Cover...  
+                                                                                                                <input onchange="TextRreadURL(this);"  type="file"  style='position:absolute;z-index:2;top:0;left:0;filter: alpha(opacity=0);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";opacity:0;background-color:transparent;color:transparent;' name="file_source" size="40"  onchange='$("#upload-file-info").html($(this).val());'>
+                                                                                                                </a>
+                                                                                                                &nbsp;
+                                                                                                                <span class='label label-info' id="upload-file-info"></span>
+                                                                                                            </div>
+                                                                                                            
+
+
+
                                                                                                         </td>
                                                                                                     
                                                                                                         
                                                                                                         <!-- picture of textbook that the user is looking for-->
                                                                                                         <td> 
                                                                                                 
-                                                                                                            <img width="70" height="100" src="../img/match/ec.jpg" class="" alt="...">
+                                                                                                            <img id="TextbookOnHand" width="70" height="100" src="../img/match/picture.jpg" class="" alt="...">
+                                                                                                            
+                                                                                                            <div style="  margin: 6%; position:relative;">
+                                                                                                
+                                                                                                                    <a class='btn btn-primary' href='javascript:;'>
+                                                                                                                        Cover... 
+                                                                                                                    <input onchange="TextHreadURL(this);"  type="file"  style='position:absolute;z-index:2;top:0;left:0;filter: alpha(opacity=0);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";opacity:0;background-color:transparent;color:transparent;' name="file_source" size="40"  onchange='$("#upload-file-info").html($(this).val());'>
+                                                                                                                    </a>
+                                                                                                                    &nbsp;
+                                                                                                                    <span class='label label-info' id="upload-file-info"></span>
+                                                                                                                </div>
+
+
+
+                                                                                                           
+                                                                                                        
                                                                                                         </td>
                                                                                                     </tr>
                                                                         
                                                                                                     
                                                                         
                                                                                                     <!-- row 3 of table-->
-                                                                                                    <tr>
+                                                                                                    <tr  >
                                                                                                         
                                                                                                     <!-- Information of textbook that the user has-->
-                                                                                                        <td>
+                                                                                                        <td >
+
                                                                                                             <hr> 
-                                                                                                            <p style=" font-size: 60% ;   color:grey; text-align: left; margin-right: 5% " >  Title: South African employment relations theory and practice Author: Nel, P. S. Year Published: 2016 Edition: 8th Publisher: Van Schaik: Pretoria</p>
+                                                                                                            <p id="TxBookOnHand" style=" font-size: 60% ;   color:grey; text-align: left; margin-right: 5% " >  Title: South African employment relations theory and practice Author: Nel, P. S. Year Published: 2016 Edition: 8th Publisher: Van Schaik: Pretoria</p>
                                                                                                             <hr>
                                                                                                         </td>
                                                                         
@@ -272,19 +314,38 @@
                                                                                                     <!-- Information of textbook that the user is looking for-->
                                                                                                         <td>
                                                                                                             <hr> 
-                                                                                                            <p style=" font-size: 60% ;  color:grey; text-align: left; margin-left: 8%  " >  Title: South African employment relations theory and practice Author: Nel, P. S. Year Published: 2016 Edition: 8th Publisher: Van Schaik: Pretoria</p>
+                                                                                                            <p id="TxBookRequired" style=" font-size: 60% ;  color:grey; text-align: left; margin-left: 8%  " >  Title: South African employment relations theory and practice Author: Nel, P. S. Year Published: 2016 Edition: 8th Publisher: Van Schaik: Pretoria</p>
+                                                                                                            
                                                                                                             <hr>
+                                                                                                            
                                                                                                         </td>
+                                                                                                        
                                                                                                     </tr>
-                                                                        
+                                                                                                    
                                                                         
                                                                                                 </table>
                                                                                                 
                                                                                                 
                                                                                   </div>
                                                                                   
-                                                                    </div>
-                                                                    <br>
+                                                                                    <hr>
+
+                                                                                  
+      
+                                                                                        <!-- Modal pop up textbook information -->
+                                                                                        <!-- Modal -->
+<div  class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        
 
 
 
@@ -293,89 +354,103 @@
 
 
 
-
-
-
-
-
-
-
-
-
-                                                                    <div class="row">
-                                                                                    
-                                                                            <div class="col-md-6" style=" margin: 3%; border:solid; border-radius: 6px; border-color:rgb(236, 236, 236);" >
-                                                                                    <table style="text-align: center; width :90%;">
-                                                                                            
-                                                                                       
-                                                                                            <!-- row 1 of table-->
-                                                                                            <tr >
-                                                                                                <h6 style="margin: 4%">Branch 2</h6>
-                                                                                                <!-- colum one show the textbook that the user has-->
-                                                                                                <td>
-                                                                                                    <hr> 
-                                                                                                    <h6  > TEXTBOOKS ON HAND </h6>
-                                                                                                    <hr style="width:100%; background-color: white">
-                                                                                                </td>
-                                                                
-                                                                                                <!-- colum two show the textbook that the user is looking for-->
-                                                                                                <td> 
-                                                                                                    <hr>
-                                                                                                    <h6  >TEXTBOOKS REQUIRED</h6>
-                                                                                                    <hr style="width:100%; background-color:white">
-                                                                                                </td>
-                                                                                        
-                                                                                            </tr>
-                                                                
-                                                                
-                                                                                            <!-- row 2 of table-->
-                                                                                            <tr>
-                                                                                                <!-- picture of textbook that the user has-->
-                                                                                                <td>
-                                                                                                    <img width="70" height="100" src="../img/match/bba.jpg" class="" alt="...">
-                                                                                                </td>
-                                                                                            
-                                                                                                
-                                                                                                <!-- picture of textbook that the user is looking for-->
-                                                                                                <td> 
-                                                                                        
-                                                                                                    <img width="70" height="100" src="../img/match/ec.jpg" class="" alt="...">
-                                                                                                </td>
-                                                                                            </tr>
-                                                                
-                                                                                            
-                                                                
-                                                                                            <!-- row 3 of table-->
-                                                                                            <tr>
-                                                                                                
-                                                                                            <!-- Information of textbook that the user has-->
-                                                                                                <td>
-                                                                                                    <hr> 
-                                                                                                    <p style=" font-size: 60% ;   color:grey; text-align: left; margin-right: 5% " >  Title: South African employment relations theory and practice Author: Nel, P. S. Year Published: 2016 Edition: 8th Publisher: Van Schaik: Pretoria</p>
-                                                                                                   
                                                                                                     
-                                                                                                   
-                                                                                                   
-                                                                                                    <hr>
-                                                                                                </td>
-                                                                
-                                                                                                
-                                                                                            <!-- Information of textbook that the user is looking for-->
-                                                                                                <td>
-                                                                                                    <hr> 
-                                                                                                    <p style=" font-size: 60% ;  color:grey; text-align: left; margin-left: 8%  " >  Title: South African employment relations theory and practice Author: Nel, P. S. Year Published: 2016 Edition: 8th Publisher: Van Schaik: Pretoria</p>
-                                                                                                    <hr>
-                                                                                                </td>
-                                                                                            </tr>
-                                                                
-                                                                
-                                                                                        </table>
+                                                                                            <!--Textbook add 1-->
+                                                                                        <div class="card" style="width: 90% ; margin-left: 2%; margin-bottom: 5% ; " >
+
+                                                                                                <article class="card-body" style="margin:1%;">
+                                                                                                <!--<a href="" class="float-right btn btn-outline-primary">Sign up</a>-->
+                                                                                                    <h5 style="text-align: center; margin: 3%" class="card-title mb-4 mt-1">Add requested TextBook</h5>
+                                                                                                    <br>
+                                                                                                        <form style="margin:5%">
+                                                                                                            <div class="form-group">
+                                                                                                                <input style="border-top:white;border-left:white; border-right:white; border-radius: 0%; " id="TextbookTitle1" class="form-control" placeholder="Textbook Title" type="text">
+                                                                                                            </div> <!-- form-group// -->
+                                                                                                            <div class="form-group">
+                                                                                                                <input style="border-top:white;border-left:white; border-right:white; border-radius: 0%; " id="TextbookAuthor2" class="form-control" placeholder="Author" type="text">
+                                                                                                            </div> <!-- form-group// -->                                      
+                                                                                            
+                                                                                                            <div class="form-group">
+                                                                                                                <input style="border-top:white;border-left:white; border-right:white; border-radius: 0%; " id="YearPublished3" class="form-control" placeholder="Year Published" type="email">
+                                                                                                            </div> <!-- form-group// -->
+                                                                                                            <div class="form-group">
+                                                                                                                <input style="border-top:white;border-left:white; border-right:white; border-radius: 0%; " id="TextbookEdition4" class="form-control" placeholder="Edition" type="text">
+                                                                                                            </div> <!-- form-group// -->                                      
+                                                                                            
+                                                                                                            <div class="form-group">
+                                                                                                                <input style="border-top:white;border-left:white; border-right:white; border-radius: 0%; " id="TextbookPublisher5" class="form-control" placeholder="Publisher" type="text">
+                                                                                                            </div> <!-- form-group// -->
+                                                                                                            <div class="form-group">
+                                                                                                                <input style="border-top:white;border-left:white; border-right:white; border-radius: 0%; " id="Textbookuniversity6" class="form-control" placeholder="university" type="text">
+                                                                                                            </div> <!-- form-group// -->           
+                                                                                                            
+                                                                                                            <button style="width: 100%" onclick="TextbookRequired()"  type="button" class="btn btn-outline-primary">Add Textbook</button>
                                                                                         
+                                                                                                            
+                                                                                                        </form>
+                                                                                                    </article>
+                                                                                                </div> <!-- card.// -->
                                                                                         
-                                                                          </div>
-                                                                          
-                                                            </div>
-                                                            <br>
+
+
+
+                                                                                    <!--Textbook add 2  requested TextBook  -->
+                                                                                                        <div class="card" style="  width: 90% ; margin-left: 2%; margin-bottom: 5% ;margin-top: 10%" >
+                                                                                                                <article class="card-body" style="margin:2%">
+                                                                                                                    <!--<a href="" class="float-right btn btn-outline-primary">Sign up</a>-->
+                                                                                                                    <h5 style="text-align: center" class="card-title mb-4 mt-1">Add TextBook on Hand</h5>
+                                                                                                                    <br>
+                                                                                                                    <form id='form' style="margin:5%">
+                                                                                                                        <div class="form-group">
+                                                                                                                            <input style="border-top:white;border-left:white; border-right:white; border-radius: 0%; " id="TextbookTitle" class="form-control" placeholder="Textbook Title" type="text">
+                                                                                                                        </div> <!-- form-group// -->
+                                                                                                                        <div class="form-group">
+                                                                                                                            <input style="border-top:white;border-left:white; border-right:white; border-radius: 0%; " id="TextbookAuthor" class="form-control" placeholder="Author" type="text">
+                                                                                                                        </div> <!-- form-group// -->                                      
+                                                                                                                    
+                                                                                                                        <div class="form-group">
+                                                                                                                            <input style="border-top:white;border-left:white; border-right:white; border-radius: 0%; " id="YearPublished" name="" class="form-control" placeholder="Year Published" type="email">
+                                                                                                                        </div> <!-- form-group// -->
+                                                                                                                        <div class="form-group">
+                                                                                                                            <input style="border-top:white;border-left:white; border-right:white; border-radius: 0%; " id="TextbookEdition" class="form-control" placeholder="Edition" type="text">
+                                                                                                                        </div> <!-- form-group// -->                                      
+                                                                                                                    
+                                                                                                                        <div class="form-group">
+                                                                                                                            <input style="border-top:white;border-left:white; border-right:white; border-radius: 0%; " id="TextbookPublisher" class="form-control" placeholder="Publisher" type="text">
+                                                                                                                        </div> <!-- form-group// -->
+                                                                                                                        <div class="form-group">
+                                                                                                                            <input style="border-top:white;border-left:white; border-right:white; border-radius: 0%; " id="Textbookuniversity" class="form-control" placeholder="university" type="text">
+                                                                                                                        </div> <!-- form-group// -->                                      
+                                                                                                                        
+                                                                                                                        <button onclick="TextbookOnHand()" style="width: 100%"  type="button" class="btn btn-outline-primary">Add Textbook</button>
+                                                                                                                </form>
+                                                                                                            </article>
+                                                                                                        </div> <!-- card.// -->
+                                                                                                    </aside> <!-- col.// -->
+                                                                                                    
+                                                                                                        
+
+
+
+
+
+
+
+                                                                                                </div>
+                                                                                                <div class="modal-footer">
+                                                                                                <button  type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                                                <label style="margin-left:8%">Save into</label>
+                                                                                                <button onclick="DisplayBranch1()" type="button" class="btn btn-primary"> Branch1</button>
+                                                                                                <button onclick="DisplayBranch2()" type="button" class="btn btn-primary"> Branch2</button>
+                                                                                                <button onclick="DisplayBranch3()" type="button" class="btn btn-primary"> Branch3</button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        </div>
+                                                                                        <br>
+
+                                                                   
 
 
 
@@ -390,78 +465,228 @@
 
 
 
-                                                            <div class="row">
+
+
+                                                                                        <div class="row">
                                                                                     
-                                                                    <div class="col-md-6" style=" margin: 3%; border:solid; border-radius: 6px; border-color:rgb(236, 236, 236);" >
-                                                                            <table style="text-align: center; width :90%;">
-                                                                                    
-                                                                               
-                                                                                    <!-- row 1 of table-->
-                                                                                    <tr >
-                                                                                        <h6 style="margin: 4%">Branch 3 </h6>
-                                                                                        <!-- colum one show the textbook that the user has-->
-                                                                                        <td>
-                                                                                            <hr> 
-                                                                                            <h6  > TEXTBOOKS ON HAND </h6>
-                                                                                            <hr style="width:100%; background-color: white">
-                                                                                        </td>
-                                                        
-                                                                                        <!-- colum two show the textbook that the user is looking for-->
-                                                                                        <td> 
+                                                                                            <div class="col-md-6" style="  margin: 3%; " >
+                                                                                                    <table style="text-align: center; width :90%;">
+                                                                                                            
+                                                                                                       
+                                                                                                            <!-- row 1 of table-->
+                                                                                                            <tr >
+                                                                                                                <h6 style="margin: 4%">Branch 2</h6>
+                                                                                                                <!-- colum one show the textbook that the user has-->
+                                                                                                                <td>
+                                                                                                                    <hr> 
+                                                                                                                    <h6  > TEXTBOOKS ON HAND </h6>
+                                                                                                                    <hr style="width:100%; background-color: white">
+                                                                                                                </td>
+                                                                                
+                                                                                                                <!-- colum two show the textbook that the user is looking for-->
+                                                                                                                <td> 
+                                                                                                                    <hr>
+                                                                                                                    <h6  >TEXTBOOKS REQUIRED</h6>
+                                                                                                                    <hr style="width:100%; background-color:white">
+                                                                                                                </td>
+                                                                                                        
+                                                                                                            </tr>
+                                                                                
+                                                                                
+                                                                                                            <!-- row 2 of table-->
+                                                                                                            <tr >
+                                                                                                                <!-- picture of textbook that the user has-->
+                                                                                                                <td>
+                                                                                                                    <img width="70" height="100" id="TextbookRequiredB2IMG" src="../img/match/picture.jpg" class="" alt="...">
+                                                                                                                      
+                                                                                                                    
+        
+                                                                                                                    <div style="  margin: 6%; position:relative;">
+                                                                                                        
+                                                                                                                        <a class='btn btn-primary' href='javascript:;'>
+                                                                                                                            Cover...  
+                                                                                                                        <input onchange="TextR2readURL(this);"  type="file"  style='position:absolute;z-index:2;top:0;left:0;filter: alpha(opacity=0);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";opacity:0;background-color:transparent;color:transparent;' name="file_source" size="40"  onchange='$("#upload-file-info").html($(this).val());'>
+                                                                                                                        </a>
+                                                                                                                        &nbsp;
+                                                                                                                        <span class='label label-info' id="upload-file-info"></span>
+                                                                                                                    </div>
+                                                                                                                    
+        
+        
+        
+                                                                                                                </td>
+                                                                                                            
+                                                                                                                
+                                                                                                                <!-- picture of textbook that the user is looking for-->
+                                                                                                                <td> 
+                                                                                                        
+                                                                                                                    <img id="TextbookOnHandB2IMG" width="70" height="100" src="../img/match/picture.jpg" class="" alt="...">
+                                                                                                                    
+                                                                                                                    <div style="  margin: 6%; position:relative;">
+                                                                                                        
+                                                                                                                            <a class='btn btn-primary' href='javascript:;'>
+                                                                                                                                Cover... 
+                                                                                                                            <input onchange="TextH2readURL(this);"  type="file"  style='position:absolute;z-index:2;top:0;left:0;filter: alpha(opacity=0);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";opacity:0;background-color:transparent;color:transparent;' name="file_source" size="40"  onchange='$("#upload-file-info").html($(this).val());'>
+                                                                                                                            </a>
+                                                                                                                            &nbsp;
+                                                                                                                            <span class='label label-info' id="upload-file-info"></span>
+                                                                                                                        </div>
+        
+        
+        
+                                                                                                                   
+                                                                                                                
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                
+                                                                                                            
+                                                                                
+                                                                                                            <!-- row 3 of table-->
+                                                                                                            <tr  >
+                                                                                                                
+                                                                                                            <!-- Information of textbook that the user has-->
+                                                                                                                <td >
+        
+                                                                                                                    <hr> 
+                                                                                                                    <p id="TxBookOnHandB2" style=" font-size: 60% ;   color:grey; text-align: left; margin-right: 5% " >  Title: South African employment relations theory and practice Author: Nel, P. S. Year Published: 2016 Edition: 8th Publisher: Van Schaik: Pretoria</p>
+                                                                                                                    <hr>
+                                                                                                                </td>
+                                                                                
+                                                                                                                
+                                                                                                            <!-- Information of textbook that the user is looking for-->
+                                                                                                                <td>
+                                                                                                                    <hr> 
+                                                                                                                    <p id="TxBookRequiredB2" style=" font-size: 60% ;  color:grey; text-align: left; margin-left: 8%  " >  Title: South African employment relations theory and practice Author: Nel, P. S. Year Published: 2016 Edition: 8th Publisher: Van Schaik: Pretoria</p>
+                                                                                                                    
+                                                                                                                    <hr>
+                                                                                                                    
+                                                                                                                </td>
+                                                                                                                
+                                                                                                            </tr>
+                                                                                                            
+                                                                                
+                                                                                                        </table>
+                                                                                                        
+                                                                                                        
+                                                                                          </div>
+                                                                                          
                                                                                             <hr>
-                                                                                            <h6  >TEXTBOOKS REQUIRED</h6>
-                                                                                            <hr style="width:100%; background-color:white">
-                                                                                        </td>
-                                                                                
-                                                                                    </tr>
-                                                        
-                                                        
-                                                                                    <!-- row 2 of table-->
-                                                                                    <tr>
-                                                                                        <!-- picture of textbook that the user has-->
-                                                                                        <td>
-                                                                                            <img width="70" height="100" src="../img/match/bba.jpg" class="" alt="...">
-                                                                                        </td>
-                                                                                    
-                                                                                        
-                                                                                        <!-- picture of textbook that the user is looking for-->
-                                                                                        <td> 
-                                                                                
-                                                                                            <img width="70" height="100" src="../img/match/ec.jpg" class="" alt="...">
-                                                                                        </td>
-                                                                                    </tr>
-                                                        
-                                                                                    
-                                                        
-                                                                                    <!-- row 3 of table-->
-                                                                                    <tr>
-                                                                                        
-                                                                                    <!-- Information of textbook that the user has-->
-                                                                                        <td>
-                                                                                            <hr> 
-                                                                                            <p style=" font-size: 60% ;   color:grey; text-align: left; margin-right: 5% " >  Title: South African employment relations theory and practice Author: Nel, P. S. Year Published: 2016 Edition: 8th Publisher: Van Schaik: Pretoria</p>
-                                                                                            <hr>
-                                                                                        </td>
-                                                        
-                                                                                        
-                                                                                    <!-- Information of textbook that the user is looking for-->
-                                                                                        <td>
-                                                                                            <hr> 
-                                                                                            <p style=" font-size: 60% ;  color:grey; text-align: left; margin-left: 8%  " >  Title: South African employment relations theory and practice Author: Nel, P. S. Year Published: 2016 Edition: 8th Publisher: Van Schaik: Pretoria</p>
-                                                                                            <hr>
-                                                                                        </td>
-                                                                                    </tr>
-                                                        
-                                                        
-                                                                                </table>
-                                                                                
-                                                                                
-                                                                  </div>
-                                                                  
-                                                    </div>
-                                                    <br><hr>
 
 
+
+
+
+
+
+
+
+
+
+
+                                                                                            <div class="row">
+                                                                                    
+                                                                                                <div class="col-md-6" style="  margin: 3%; " >
+                                                                                                        <table style="text-align: center; width :90%;">
+                                                                                                                
+                                                                                                           
+                                                                                                                <!-- row 1 of table-->
+                                                                                                                <tr >
+                                                                                                                    <h6 style="margin: 4%">Branch 3</h6>
+                                                                                                                    <!-- colum one show the textbook that the user has-->
+                                                                                                                    <td>
+                                                                                                                        <hr> 
+                                                                                                                        <h6  > TEXTBOOKS ON HAND </h6>
+                                                                                                                        <hr style="width:100%; background-color: white">
+                                                                                                                    </td>
+                                                                                    
+                                                                                                                    <!-- colum two show the textbook that the user is looking for-->
+                                                                                                                    <td> 
+                                                                                                                        <hr>
+                                                                                                                        <h6  >TEXTBOOKS REQUIRED</h6>
+                                                                                                                        <hr style="width:100%; background-color:white">
+                                                                                                                    </td>
+                                                                                                            
+                                                                                                                </tr>
+                                                                                    
+                                                                                    
+                                                                                                                <!-- row 2 of table-->
+                                                                                                                <tr >
+                                                                                                                    <!-- picture of textbook that the user has-->
+                                                                                                                    <td>
+                                                                                                                        <img width="70" height="100" id="TextbookRequiredB3IMG" src="../img/match/picture.jpg" class="" alt="...">
+                                                                                                                          
+                                                                                                                        
+            
+                                                                                                                        <div style="  margin: 6%; position:relative;">
+                                                                                                            
+                                                                                                                            <a class='btn btn-primary' href='javascript:;'>
+                                                                                                                                Cover...  
+                                                                                                                            <input onchange="TextR3readURL(this);"  type="file"  style='position:absolute;z-index:2;top:0;left:0;filter: alpha(opacity=0);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";opacity:0;background-color:transparent;color:transparent;' name="file_source" size="40"  onchange='$("#upload-file-info").html($(this).val());'>
+                                                                                                                            </a>
+                                                                                                                            &nbsp;
+                                                                                                                            <span class='label label-info' id="upload-file-info"></span>
+                                                                                                                        </div>
+                                                                                                                        
+            
+            
+            
+                                                                                                                    </td>
+                                                                                                                
+                                                                                                                    
+                                                                                                                    <!-- picture of textbook that the user is looking for-->
+                                                                                                                    <td> 
+                                                                                                            
+                                                                                                                        <img id="TextbookOnHandB3IMG" width="70" height="100" src="../img/match/picture.jpg" class="" alt="...">
+                                                                                                                        
+                                                                                                                        <div style="  margin: 6%; position:relative;">
+                                                                                                            
+                                                                                                                                <a class='btn btn-primary' href='javascript:;'>
+                                                                                                                                    Cover... 
+                                                                                                                                <input onchange="TextH3readURL(this);"  type="file"  style='position:absolute;z-index:2;top:0;left:0;filter: alpha(opacity=0);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";opacity:0;background-color:transparent;color:transparent;' name="file_source" size="40"  onchange='$("#upload-file-info").html($(this).val());'>
+                                                                                                                                </a>
+                                                                                                                                &nbsp;
+                                                                                                                                <span class='label label-info' id="upload-file-info"></span>
+                                                                                                                            </div>
+            
+            
+            
+                                                                                                                       
+                                                                                                                    
+                                                                                                                    </td>
+                                                                                                                </tr>
+                                                                                    
+                                                                                                                
+                                                                                    
+                                                                                                                <!-- row 3 of table-->
+                                                                                                                <tr  >
+                                                                                                                    
+                                                                                                                <!-- Information of textbook that the user has-->
+                                                                                                                    <td >
+            
+                                                                                                                        <hr> 
+                                                                                                                        <p id="TxBookOnHandB3" style=" font-size: 60% ;   color:grey; text-align: left; margin-right: 5% " >  Title: South African employment relations theory and practice Author: Nel, P. S. Year Published: 2016 Edition: 8th Publisher: Van Schaik: Pretoria</p>
+                                                                                                                        <hr>
+                                                                                                                    </td>
+                                                                                    
+                                                                                                                    
+                                                                                                                <!-- Information of textbook that the user is looking for-->
+                                                                                                                    <td>
+                                                                                                                        <hr> 
+                                                                                                                        <p id="TxBookRequiredB3" style=" font-size: 60% ;  color:grey; text-align: left; margin-left: 8%  " >  Title: South African employment relations theory and practice Author: Nel, P. S. Year Published: 2016 Edition: 8th Publisher: Van Schaik: Pretoria</p>
+                                                                                                                        
+                                                                                                                        <hr>
+                                                                                                                        
+                                                                                                                    </td>
+                                                                                                                    
+                                                                                                                </tr>
+                                                                                                                
+                                                                                    
+                                                                                                            </table>
+                                                                                                            
+                                                                                                            
+                                                                                              </div>
+                                                                                              
+                                                                                                <hr>
 
 
 
@@ -490,52 +715,32 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    
-                        <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="contact">Contactarme</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">×</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="form-group">
-                                            <p for="msj">Se enviará este mensaje a la persona que desea contactar, indicando que te quieres comunicar con el. Para esto debes de ingresar tu información personal.</p>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="txtFullname">Nombre completo</label>
-                                            <input type="text" id="txtFullname" class="form-control">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="txtEmail">Email</label>
-                                            <input type="text" id="txtEmail" class="form-control">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="txtPhone">Teléfono</label>
-                                            <input type="text" id="txtPhone" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                                        <button type="button" class="btn btn-primary" (click)="openModal()" data-dismiss="modal">Guardar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                </div>
+            </div>
+
+
+
+            
+            
                 
-                  <!-- Optional JavaScript -->
-                  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-                  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-                  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-                  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-                  
-                  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-                
-                
+                        
+            
+            
+            
+            
+            
+            
+            <script src="editProfileUI.js"></script>
+
+            <!-- Optional JavaScript -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+            
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+            
                                 
-                </body>
+    </body>
 </html>
